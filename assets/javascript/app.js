@@ -63,7 +63,6 @@ var topics= ["Fraiser", "Last Week Tonight", "Mad Men", "Broadchurch", "My So Ca
 
 				var createDiv = $("#gifs").prepend('<div>');
                 var ratingData = $("<p>").text("Rating: " + results[i].rating);
-
                 var newDiv = $(createDiv).prepend('<div>');
                 newDiv.prepend(ratingData);
                 var image = $('<img>')
