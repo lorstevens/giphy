@@ -1,16 +1,32 @@
 body {
 	font-style: helvetica;
+	font-weight: bold;
+	background-image: url("../images/darkness.png");
 }
 
 .tvGif {
-	padding: 50px 30px;
+	width: 300px;
+	height: 200px;
+	float: left;
+	padding: 10px;
+	/*padding: 50px 30px;*/
 }
 
 label {
-	color: red;
+	color: #e34191;
+
 }
 
-h1 {
-	color: red;
+#tv-input{
+	width: 50%;
 }
 
+
+#str {
+	width: 800px;
+	height: auto;
+	font-size: 20px;
+	color: #fff;
+	font-weight: bold;
+
+}

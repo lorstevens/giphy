@@ -1,40 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>GIPHYYYY</title>
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-
+    <meta charset="UTF-8">
+    <title>GIPHYYYY</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <!-- 
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 </head>
+
 <body>
-<div class= "container">
-	<div class= "row">
-		<div class="col-md-8">
-				<h1>TV GIFs</h1>
-				<br><br>
-				<div id="buttons"></div>
-
-		</div>
-
-		<div class="col-md-4">
-			<br>
-			<label for="tv-input">Search for a TV Show: </label>
-			<input type="text" id="tv-input"><br>
-			<input id="add-tv" type="submit" value="Search">
-		</div>
-
-		<div class="col-md-12">
-		<div id="gifs"></div>
-
-		</div>
-	</div>	
+    <div class="navbar-fixed">
+        <nav class="transparent z-depth-0">
+            <div class="nav-wrapper">
+                <div class="row">
+                    <div class="col s12">
+                        <a href="#" data-activates="mobile-demo" class="button-collapse show-on-medium"><i class="material-icons">menu</i></a>
+                        <a class="brand-logo center" target="_blank">GIPHY FUN</a>
+                        <ul class="right hide-on-med-and-down">
+                            <li><a href="http://lorna-stevens.com/" target="_blank">ABOUT ME</a></li>
+                            <li><a href="https://giphy.com/" target="_blank">GIPHY</a></li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="side-nav show-on-small" id="mobile-demo">
+                    <li><a href="http://lorna-stevens.com/" target="_blank">ABOUT ME</a></li>
+                    <li><a href="https://giphy.com/" target="_blank">GIPHY</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- Visual Breakpoint Helper for Materialize - http://materializecss.com/ -->
+    <div style="position:fixed;bottom:0;left:0;background-color:rgba(0,0,0,0.5);padding:10px;color:#fff;z-index: 99999999;">
+        <span class="hide-on-med-only hide-on-large-only">Small</span>
+        <span class="hide-on-small-only hide-on-large-only">Tablet</span>
+        <span class="hide-on-small-only hide-on-med-only">Desktop</span>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div id="str"></div>
+                <div id="buttons"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m4">
+                <label for="tv-input">Search for a TV Show: </label>
+                <input type="text" id="tv-input">
+                <br>
+                <input id="add-tv" type="submit" value="Search">
+            </div>
+        </div>
+        <!-- <div class="row"> -->
+           <!--  <div class="col s12 m4"> -->
+                <div id="gifs"></div>
+            <!-- </div> -->
+        <!-- </div> -->
+    </div>
 </div>
 </body>
 <script src="./assets/javascript/app.js"></script>
+
 </html>
