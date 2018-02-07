@@ -24,7 +24,7 @@ var running = setTimeout(animate, 90);
 })();
 
 
-var topics= ["Fraiser", "Last Week Tonight", "Mad Men", "Broadchurch", "My So Called Life", "Master of None", "Parks and Rec"];
+var topics= ["Frasier", "Last Week Tonight", "Mad Men", "Broadchurch", "My So Called Life", "Master of None", "Parks and Rec"];
   
 
 // This is the function that creates the buttons
