@@ -4,16 +4,34 @@ body {
 	background-image: url("../images/darkness.png");
 }
 
+
 .tvGif {
 	width: 300px;
 	height: 200px;
-	float: left;
-	padding: 10px;
-	margin: auto;
-	text-align: center
+	
+}
+
+.tvItems {
+  float: left;
+  padding: 10px;
+
+}
+
+p{
+	
 }
 
 
+	/*float: left;
+	padding: 10px;
+	margin: auto;*/
+	
+
+
+/*p{
+	color: red;
+
+}*/
 
 #tv-input{
 	width: 50%;

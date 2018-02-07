@@ -56,24 +56,49 @@ var topics= ["Fraiser", "Last Week Tonight", "Mad Men", "Broadchurch", "My So Ca
 		    }).done(function(response) {
 		    	console.log(response);
 
-		    	var results = response.data;
-	
-				for (j = 0; j < results.length; j++) {
 
 
-				var createDiv = $("#gifs").prepend('<div>');
-                var ratingData = $("<p>").text("Rating: " + results[i].rating);
-                var newDiv = $(createDiv).prepend('<div>');
-                newDiv.prepend(ratingData);
-                var image = $('<img>')
-                newDiv.prepend(image);
+      var results = response.data;
 
-                image.addClass("tvGif")
-                image.attr("src", results[j].images.fixed_height_still.url);
-				image.attr("data-animate", results[j].images.fixed_height.url);
-				image.attr("data-still", results[j].images.fixed_height_still.url);
-				image.attr("data-state", results[j].images.fixed_height_still.url, "still") 
-				image.append(ratingData)
+      for (var j = 0; j < results.length; j++) {
+        var createDiv = $("<div class=\"tvItems\">");
+
+
+        var ratingData = results[j].rating;
+
+        var p = $("<p>").text("Rating: " + ratingData);
+
+
+        var image = $("<img>");
+        image.attr("src", results[j].images.fixed_height_still.url);
+        image.attr("data-still", results[j].images.fixed_height_still.url);
+        image.attr("data-animate", results[j].images.fixed_height.url);
+        image.attr("data-state", results[j].images.fixed_height_still.url, "still");
+        image.addClass("tvGif");
+
+        createDiv.append(p);
+        createDiv.append(image);
+
+        $("#gifs").prepend(createDiv);
+
+
+
+
+
+				// var createDiv = $("#gifs").prepend('<div>');
+				// var ratingData = results[i].rating;
+    //             var newDiv = $(createDiv).prepend('<div>');
+    //             newDiv.prepend('Rating: ' + ratingData);
+    //             var image = $('<img>')
+    //             newDiv.prepend(image);
+
+
+    //             image.addClass("tvGif")
+    //             image.attr("src", results[j].images.fixed_height_still.url);
+				// image.attr("data-animate", results[j].images.fixed_height.url);
+				// image.attr("data-still", results[j].images.fixed_height_still.url);
+				// image.attr("data-state", results[j].images.fixed_height_still.url, "still") 
+				// image.append(ratingData)
 				// image.append(tvGif)
 
 				}
